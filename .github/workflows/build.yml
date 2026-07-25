@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Report tested SHA
-        run: echo "Build tested SHA: $GITHUB_SHA"
+        run: |
+          echo "Build tested SHA: $GITHUB_SHA"
