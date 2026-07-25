@@ -1,0 +1,11 @@
+name: Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report tested SHA
+        run: echo "Build tested SHA: $GITHUB_SHA"
